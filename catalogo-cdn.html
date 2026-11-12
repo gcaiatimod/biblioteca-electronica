@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Biblioteca Electrónica de Ciencia y Tecnología del Ministerio de Ciencia, Tecnología e Innovación de la República Argentina">
+
+    <title>Biblioteca Electrónica de Ciencia y Tecnología - Catálogo de publicaciones</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="Shortcut icon"
+        href="https://www.argentina.gob.ar/profiles/argentinagobar/themes/argentinagobar/argentinagobar_theme/favicon.ico"
+        type="image/vnd.microsoft.icon">
+    <link rel="stylesheet"
+        href="https://www.argentina.gob.ar/profiles/argentinagobar/themes/contrib/poncho/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.argentina.gob.ar/profiles/argentinagobar/themes/contrib/poncho/css/poncho.min.css">
+    <link rel="stylesheet" href="https://www.argentina.gob.ar/profiles/argentinagobar/themes/contrib/poncho/css/icono-arg.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-top navbar-default border-bottom-amarillo">
+            <div class="container">
+                <div>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="https://www.argentina.gob.ar/" id="navbar-brand"
+                            aria-label="Argentina.gob.ar Presidencia de la Nación">
+                            <img src="https://www.argentina.gob.ar/profiles/argentinagobar/themes/argentinagobar/argentinagobar_theme/logo_argentina-azul.svg"
+                                alt="Argentina.gob.ar" height="50" width="254">
+                        </a>
+                        <a class="btn btn-mi-argentina btn-login visible-xs bg-miarg-azul"
+                            href="https://mi.argentina.gob.ar" title="Ingresar a Mi Argentina">
+                            <i class="icono-arg-mi-argentina text-white"></i><span class="sr-only">Ir a Mi
+                                Argentina</span>
+                        </a>
+                        <button onclick="jQuery('.navbar.navbar-top').addClass('state-search');"
+                            class="btn btn-mi-argentina btn-login visible-xs" aria-labelledby="edit-keys">
+                            <span class="fa fa-search fa-fw"></span><span class="sr-only">Buscar</span>
+                        </button>
+                    </div>
+
+                    <div class="nav navbar-nav navbar-right hidden-xs">
+                        <button onclick="jQuery('.navbar.navbar-top').removeClass('state-search');"
+                            class="btn btn-link btn-search-reset visible-xs">
+                            <i class="fa fa-times"><span class="sr-only">Cerrar el buscador</span></i>
+                        </button>
+                        <div id="cd-login">
+                            <a href="https://mi.argentina.gob.ar/" id="btn-mi-argentina"
+                                class="btn hidden-xs p-l-1 btn-login bg-miarg-azul"
+                                aria-label="Ingresar a Mi Argentina">
+                                <i class="fa-3x fa icono-arg-mi-argentina-extended text-white p-t-0"><span
+                                        class="sr-only">Mi Argentina</span></i>
+                            </a>
+                        </div>
+                        <div class="pull-left">
+                            <form class="main-form" role="search" action="https://biblioteca.sicyt.gob.ar/catalogo"
+                                method="get" accept-charset="UTF-8">
+                                <div class="input-group">
+                                    <label class="sr-only" for="edit-keys">Buscar en el catálogo</label>
+                                    <input placeholder="Buscá en el catálogo" id="edit-keys"
+                                        class="input-search form-control form-text" aria-label="Buscá en el catálogo"
+                                        type="text" name="t" value="" size="20" maxlength="255">
+                                    <span class="input-group-btn">
+                                        <button class="bg-white btn-search-reset btn btn-primary form-submit"
+                                            aria-labelledby="edit-keys" aria-label="Buscar" type="submit"
+                                            id="edit-submit">
+                                            <i class="fa fa-search text-primary"></i><span class="sr-only">Buscar en el
+                                                catálogo</span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main role="main">
+        <div class="panel-pane pane-imagen-destacada">
+            <div class="pane-content">
+                <div class="jumbotron m-t-0">
+                    <div class="jumbotron_bar">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ol class="breadcrumb device-breadcrumb" role="list" aria-label="Migas de pan">
+                                        <li class="device-breadcrumb__hidden-item">
+                                            <a href="https://www.argentina.gob.ar/">Inicio</a>
+                                        </li>
+                                        <li class="device-breadcrumb__toggle-item">
+                                            <a href="https://www.argentina.gob.ar/ciencia">Ministerio de Ciencia,
+                                                Tecnología e Innovación</a>
+                                        </li>
+                                        <li class="device-breadcrumb__last-visible-item">
+                                            <a href="https://biblioteca.sicyt.gob.ar">Biblioteca Electrónica de Ciencia
+                                                y Tecnología</a>
+                                        </li>
+                                        <li class="active device-breadcrumb__hidden-item" aria-current="page">
+                                            Catálogo</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="encabezado">
+                    <div class="bg-arg-azul container-fluid p-y-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12 col-sm-12">
+                                    <h1>Catálogo de publicaciones</h1>
+                                    <p>Biblioteca Electrónica de Ciencia y Tecnología</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <form action="https://biblioteca.sicyt.gob.ar/catalogo" method="GET" class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h2 class="h3 section-title m-t-0 m-b-1">Buscá publicaciones</h2>
+                                <div class="m-b-2">
+                                    <label for="t" class="sr-only">Buscar</label>
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" name="t" id="t"
+                                            placeholder="Buscar..." value="">
+                                        <span class="input-group-btn"><button type="submit" class="btn btn-primary"
+                                                aria-label="Buscar">
+                                                <i class="fa fa-search" aria-hidden="true"></i><span
+                                                    class="sr-only">Buscar</span>
+                                            </button></span>
+                                    </div>
+                                </div>
+
+                                <div>
+
+                                    <div class="panel m-t-2 details-container border border-arg-gris-niebla">
+                                        <details class="js-details ar-details" open>
+                                            <summary class="ar-details__title">Tipo</summary>
+                                            <div class="ar-details__content m-t-0 border-top border-arg-gris-niebla">
+
+                                                <div class="form-radios">
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="catalogue_type_B"><input name="catalogue_type[]"
+                                                                type="checkbox" id="catalogue_type_B" value="B">
+                                                            <span class="badge pull-right">80771</span>
+                                                            libros
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="catalogue_type_J"><input name="catalogue_type[]"
+                                                                type="checkbox" id="catalogue_type_J" value="J">
+                                                            <span class="badge pull-right">31448</span>
+                                                            revistas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="catalogue_type_C"><input name="catalogue_type[]"
+                                                                type="checkbox" id="catalogue_type_C" value="C">
+                                                            <span class="badge pull-right">31129</span>
+                                                            actas de congreso
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="catalogue_type_T"><input name="catalogue_type[]"
+                                                                type="checkbox" id="catalogue_type_T" value="T">
+                                                            <span class="badge pull-right">23471</span>
+                                                            tesis
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </div>
+
+                                    <div class="panel m-t-2 details-container border border-arg-gris-niebla">
+                                        <details class="js-details ar-details">
+                                            <summary class="ar-details__title">Acceso</summary>
+                                            <div class="ar-details__content m-t-0 border-top border-arg-gris-niebla">
+
+                                                <div class="form-radios">
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="oa_s"><input
+                                                                type="checkbox" value="s" id="oa_s" name="oa[]">
+                                                            <span class="badge pull-right">119171</span>
+                                                            abierto
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="oa_n"><input
+                                                                type="checkbox" value="n" id="oa_n" name="oa[]">
+                                                            <span class="badge pull-right">47648</span>
+                                                            suscripción
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </div>
+
+                                    <div class="panel m-t-2 details-container border border-arg-gris-niebla">
+                                        <details class="js-details ar-details">
+                                            <summary class="ar-details__title">Plataformas</summary>
+                                            <div class="ar-details__content m-t-0 border-top border-arg-gris-niebla">
+
+                                                <div class="form-radios">
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_SNRD"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_SNRD" value="SNRD">
+                                                            <span class="badge pull-right">25689</span>
+                                                            Sistema Nacional de Repositorios Digitales
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_IEEE"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_IEEE" value="IEEE">
+                                                            <span class="badge pull-right">18875</span>
+                                                            IEEE Xplore
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_ACM"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_ACM" value="ACM">
+                                                            <span class="badge pull-right">12894</span>
+                                                            ACM Digital Library
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_SPRINGER"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_SPRINGER"
+                                                                value="SPRINGER">
+                                                            <span class="badge pull-right">12329</span>
+                                                            SpringerLink
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_JSTOR"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_JSTOR" value="JSTOR">
+                                                            <span class="badge pull-right">7338</span>
+                                                            JSTOR
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_SCIENCEDIRECT"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_SCIENCEDIRECT"
+                                                                value="SCIENCEDIRECT">
+                                                            <span class="badge pull-right">3480</span>
+                                                            ScienceDirect
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_EBSCO"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_EBSCO" value="EBSCO">
+                                                            <span class="badge pull-right">2884</span>
+                                                            EBSCOHost
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_SCIELO"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_SCIELO" value="SCIELO">
+                                                            <span class="badge pull-right">1299</span>
+                                                            SciELO.org
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_SAGE"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_SAGE" value="SAGE">
+                                                            <span class="badge pull-right">1295</span>
+                                                            SAGE Journals
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_WILEY"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_WILEY" value="WILEY">
+                                                            <span class="badge pull-right">531</span>
+                                                            Wiley Online Library
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_REDALYC"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_REDALYC"
+                                                                value="REDALYC">
+                                                            <span class="badge pull-right">421</span>
+                                                            Redalyc
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_BMC"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_BMC" value="BMC">
+                                                            <span class="badge pull-right">304</span>
+                                                            BioMedCentral.com
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_OEJ"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_OEJ" value="OEJ">
+                                                            <span class="badge pull-right">218</span>
+                                                            OpenEdition Journals
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_TANDF"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_TANDF" value="TANDF">
+                                                            <span class="badge pull-right">173</span>
+                                                            Taylor and Francis Online
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_IOP"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_IOP" value="IOP">
+                                                            <span class="badge pull-right">164</span>
+                                                            IOPScience
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_ACS"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_ACS" value="ACS">
+                                                            <span class="badge pull-right">87</span>
+                                                            ACS Publications
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_NATURE"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_NATURE" value="NATURE">
+                                                            <span class="badge pull-right">78</span>
+                                                            Nature.com
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_AR"><input
+                                                                name="platform_id[]" type="checkbox" id="platform_id_AR"
+                                                                value="AR">
+                                                            <span class="badge pull-right">61</span>
+                                                            Annual Reviews
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_GSW"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_GSW" value="GSW">
+                                                            <span class="badge pull-right">51</span>
+                                                            GeoScienceWorld
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_AIP"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_AIP" value="AIP">
+                                                            <span class="badge pull-right">28</span>
+                                                            AIP Publishing
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_APS"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_APS" value="APS">
+                                                            <span class="badge pull-right">27</span>
+                                                            Physical Review Journals (APS)
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_OVID"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_OVID" value="OVID">
+                                                            <span class="badge pull-right">25</span>
+                                                            Ovid
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix" for="platform_id_GSL"><input
+                                                                name="platform_id[]" type="checkbox"
+                                                                id="platform_id_GSL" value="GSL">
+                                                            <span class="badge pull-right">15</span>
+                                                            Lyell Collection
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="platform_id_SCIENCE"><input name="platform_id[]"
+                                                                type="checkbox" id="platform_id_SCIENCE"
+                                                                value="SCIENCE">
+                                                            <span class="badge pull-right">2</span>
+                                                            Science Journals
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="panel m-t-2 details-container border border-arg-gris-niebla">
+                                        <details class="js-details ar-details">
+                                            <summary class="ar-details__title">Temática</summary>
+                                            <div class="ar-details__content m-t-0 border-top border-arg-gris-niebla">
+
+                                                <div class="form-radios">
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_1.2"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_1.2" value="1.2">
+                                                            <span class="badge pull-right">20629</span>
+                                                            Ciencias de la computación e información
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.2"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.2" value="2.2">
+                                                            <span class="badge pull-right">20023</span>
+                                                            Ingeniería eléctrica, electrónica e informática
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.4"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.4" value="5.4">
+                                                            <span class="badge pull-right">13426</span>
+                                                            Sociología
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_6.1"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_6.1" value="6.1">
+                                                            <span class="badge pull-right">11761</span>
+                                                            Historia y arqueología
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_6.2"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_6.2" value="6.2">
+                                                            <span class="badge pull-right">11540</span>
+                                                            Lenguas y literatura
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.3"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.3" value="5.3">
+                                                            <span class="badge pull-right">10996</span>
+                                                            Educación
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.2"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.2" value="5.2">
+                                                            <span class="badge pull-right">10700</span>
+                                                            Economía y negocios
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.5"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.5" value="2.5">
+                                                            <span class="badge pull-right">10146</span>
+                                                            Ingeniería de los materiales
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_1.6"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_1.6" value="1.6">
+                                                            <span class="badge pull-right">9067</span>
+                                                            Ciencias biológicas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_3.2"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_3.2" value="3.2">
+                                                            <span class="badge pull-right">8673</span>
+                                                            Medicina clínica
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_1.3"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_1.3" value="1.3">
+                                                            <span class="badge pull-right">8627</span>
+                                                            Ciencias físicas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.6"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.6" value="5.6">
+                                                            <span class="badge pull-right">8611</span>
+                                                            Ciencia política
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_1.5"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_1.5" value="1.5">
+                                                            <span class="badge pull-right">7528</span>
+                                                            Ciencias de la tierra y ciencias ambientales relacionadas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.8"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.8" value="5.8">
+                                                            <span class="badge pull-right">6697</span>
+                                                            Medios de comunicación
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_6.3"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_6.3" value="6.3">
+                                                            <span class="badge pull-right">6556</span>
+                                                            Filosofía, ética y religión
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_6.4"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_6.4" value="6.4">
+                                                            <span class="badge pull-right">5822</span>
+                                                            Artes
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.11"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.11" value="2.11">
+                                                            <span class="badge pull-right">5608</span>
+                                                            Otras ingenierías y tecnologías
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_3.3"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_3.3" value="3.3">
+                                                            <span class="badge pull-right">5172</span>
+                                                            Ciencias de la salud
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.7"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.7" value="5.7">
+                                                            <span class="badge pull-right">4562</span>
+                                                            Geografía social y económica
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.3"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.3" value="2.3">
+                                                            <span class="badge pull-right">4244</span>
+                                                            Ingeniería mecánica
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_1.1"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_1.1" value="1.1">
+                                                            <span class="badge pull-right">4242</span>
+                                                            Matemáticas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.5"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.5" value="5.5">
+                                                            <span class="badge pull-right">3992</span>
+                                                            Derecho
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_3.1"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_3.1" value="3.1">
+                                                            <span class="badge pull-right">3805</span>
+                                                            Medicina básica
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.1"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.1" value="5.1">
+                                                            <span class="badge pull-right">3253</span>
+                                                            Psicología y ciencias cognitivas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_1.4"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_1.4" value="1.4">
+                                                            <span class="badge pull-right">3073</span>
+                                                            Ciencias químicas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.7"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.7" value="2.7">
+                                                            <span class="badge pull-right">2732</span>
+                                                            Ingenieria ambiental
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_3.4"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_3.4" value="3.4">
+                                                            <span class="badge pull-right">2688</span>
+                                                            Biotecnología médica
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_4.1"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_4.1" value="4.1">
+                                                            <span class="badge pull-right">2504</span>
+                                                            Agricultura, silvicultura y pesca
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_6.5"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_6.5" value="6.5">
+                                                            <span class="badge pull-right">1907</span>
+                                                            Otras humanidades
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_5.9"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_5.9" value="5.9">
+                                                            <span class="badge pull-right">1281</span>
+                                                            Otras ciencias sociales
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_3.5"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_3.5" value="3.5">
+                                                            <span class="badge pull-right">1169</span>
+                                                            Otras ciencias médicas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.4"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.4" value="2.4">
+                                                            <span class="badge pull-right">1128</span>
+                                                            Ingeniería química
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.1"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.1" value="2.1">
+                                                            <span class="badge pull-right">1064</span>
+                                                            Ingeniería civil
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.9"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.9" value="2.9">
+                                                            <span class="badge pull-right">853</span>
+                                                            Biotecnología industrial
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_4.3"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_4.3" value="4.3">
+                                                            <span class="badge pull-right">609</span>
+                                                            Ciencia veterinaria
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.10"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.10" value="2.10">
+                                                            <span class="badge pull-right">598</span>
+                                                            Nanotecnología
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_4.2"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_4.2" value="4.2">
+                                                            <span class="badge pull-right">463</span>
+                                                            Ciencia animal e industria ganadera
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.6"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.6" value="2.6">
+                                                            <span class="badge pull-right">371</span>
+                                                            Ingeniería médica
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_2.8"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_2.8" value="2.8">
+                                                            <span class="badge pull-right">240</span>
+                                                            Biotecnología ambiental
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_4.4"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_4.4" value="4.4">
+                                                            <span class="badge pull-right">108</span>
+                                                            Biotecnología agrícola
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox m-b-05">
+                                                        <label class="label-block clearfix"
+                                                            for="discipline_id_1.7"><input name="discipline_id[]"
+                                                                type="checkbox" id="discipline_id_1.7" value="1.7">
+                                                            <span class="badge pull-right">6</span>
+                                                            Otras ciencias naturales
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </div>
+
+                                    <div class="text-center m-t-2">
+                                        <button type="submit" class="btn btn-primary btn-block">Filtrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-9">
+
+                        <div class="panel panel-default panel-body bg-gray-lighter m-t-0 m-b-2">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5">
+                                    <p class="m-t-05 m-b-0">
+                                        Mostrando <span class="fw-bold">10</span> de <span
+                                            class="fw-bold">166.819</span> registro(s)
+                                    </p>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 text-sm-right">
+                                    <div class="form-inline">
+                                        <div class="form-group m-r-1">
+                                            <label for="limit" class="m-r-05">Límite</label>
+                                            <select name="limit" id="limit" class="form-control input-sm">
+                                                <option value="10" selected="">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                                <option value="500">500</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="orderBy" class="m-r-05">Ordenar</label>
+                                            <select name="orderBy" id="orderBy" class="form-control input-sm">
+                                                <option value="title asc">título asc</option>
+                                                <option value="title desc">título desc</option>
+                                                <option value="publication_date asc">fecha asc</option>
+                                                <option value="publication_date desc">fecha desc</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div>
+                                    <!-- =========================================================================
+                                    BLOQUE 1: LIBROS (https://schema.org/Book)
+                                    - itemtype: Se define dinámicamente según el tipo de catálogo (libros -> Book).
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope itemtype="https://schema.org/Book">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">libros</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/203180" itemprop="url"><span itemprop="name">: Exploring Its Past to Protect Its Future: : Exploring Its Past to Protect Its Future</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- Año de publicación: Cuando viene vacío de la base no se agrega itemprop="datePublished" -->
+                                                        <td data-label="Año de publicación"></td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="https://directory.doabooks.org/handle/20.500.12854/93074"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">Directory of Open access
+                                                                    Books</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema; el guion "-" queda fuera de la etiqueta -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Humanidades y artes</span></a> -
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6.1"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Historia y arqueología</span></a>&nbsp;
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 2: REVISTAS (https://schema.org/Periodical)
+                                    - Incluye múltiples ISSNs y períodos concatenados (temporalCoverage).
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope
+                                        itemtype="https://schema.org/Periodical">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">revistas</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/9468" itemprop="url"><span itemprop="name">:Estúdio</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <p class="m-b-1 font-sans-serif small">
+                                                <span class="fw-bold">ISSNs</span>
+                                                <!-- issn: Se envuelve únicamente el código numérico XXXX-XXXX en <span itemprop="issn">, dejando la aclaración "(impreso)" y "(en línea)" por fuera -->
+                                                <span itemprop="issn">1647-6158</span> (impreso)
+                                                <span itemprop="issn">1647-7316</span> (en línea)
+                                            </p>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Período</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- temporalCoverage: Toma directamente el string concatenado de la base ("desde ... / hasta ...") ya que Schema.org acepta Text -->
+                                                        <td data-label="Período" itemprop="temporalCoverage">desde ene.
+                                                            2010 / hasta nov. 2026</td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="http://estudio.fba.ul.pt/" target="_blank"
+                                                                itemprop="url"><span itemprop="name">Directory of Open
+                                                                    Access Journals</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <td data-label="Período" itemprop="temporalCoverage">desde ene.
+                                                            2012 / hasta nov. 2026</td>
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="http://www.scielo.mec.pt/scielo.php?script=sci_serial&amp;pid=1647-6158"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">SciELO.org</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6.4"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Artes</span></a>&nbsp;
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 3: ACTAS DE CONGRESO (https://schema.org/ScholarlyArticle)
+                                    - itemtype: Se define dinámicamente según el tipo de catálogo (actas de congreso -> ScholarlyArticle).
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope
+                                        itemtype="https://schema.org/ScholarlyArticle">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">actas de
+                                                        congreso</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/150705" itemprop="url"><span itemprop="name">¡A desalambrar! Resistencias, desigualdades e itinerarios posibles en sociedades latinoamericanas</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- datePublished: Se incluye cuando la fila tiene año de publicación cargado en la base -->
+                                                        <td data-label="Año de publicación" itemprop="datePublished">
+                                                            2022</td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="https://directory.doabooks.org/handle/20.500.12854/90997"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">Sistema Nacional de Repositorios
+                                                                    Digitales (SNRD)</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema; el guion "-" queda fuera de la etiqueta -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=5"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Ciencias sociales</span></a> -
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=5.4"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Sociología</span></a>&nbsp;
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 4: LIBROS (https://schema.org/Book)
+                                    - Caso sin año de publicación y sin bloque de cobertura temática en la base.
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope itemtype="https://schema.org/Book">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">libros</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/201645" itemprop="url"><span itemprop="name">¡A los Americanos!: Deutsche Propaganda in Lateinamerika während des Ersten Weltkrieges (1914–1918)</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- Año de publicación: Cuando viene vacío de la base no se agrega itemprop="datePublished" -->
+                                                        <td data-label="Año de publicación"></td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="https://directory.doabooks.org/handle/20.500.12854/94401"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">Directory of Open access
+                                                                    Books</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 5: TESIS (https://schema.org/Thesis)
+                                    - Incluye lista de autores separados por ";" (Person) y resumen desplegable (abstract).
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope
+                                        itemtype="https://schema.org/Thesis">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">tesis</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/116252" itemprop="url"><span itemprop="name">¡Alto o disparo!: representaciones acerca de los usos de la fuerza en la Policía Federal Argentina</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <p class="m-b-1 font-sans-serif small"><span
+                                                    class="fw-bold">Autores/as:</span> <span class="text-muted">
+                                                    <!-- author (Person): Al recorrer el array/cadena de autores, cada nombre se envuelve en su propio nodo Person y el separador ";" queda fuera -->
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span
+                                                            itemprop="name">Mariana Da Silva Lorenz</span></span>
+                                                    ;
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span
+                                                            itemprop="name">Mariana Galvani</span></span>
+                                                </span></p>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- datePublished: Se incluye cuando la fila tiene año de publicación cargado en la base -->
+                                                        <td data-label="Año de publicación" itemprop="datePublished">
+                                                            2014</td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="http://ri.unsam.edu.ar:80/greenstone/cgi-bin/library.cgi?a=d&amp;c=coltesis&amp;d=TMAG_IDAES_2014_DSLM"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">Repositorio Institucional de la
+                                                                    Universidad Nacional de San Martín (SNRD)</span></a>
+                                                        </td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema; el guion "-" queda fuera de la etiqueta -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=5.4"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Sociología</span></a> -
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=5.5"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Derecho</span></a> -
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=5.6"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Ciencia política</span></a>&nbsp;
+
+                                            </p>
+                                            <details class="m-t-1" id="abstract-116252">
+                                                <summary>Resumen disponible</summary>
+                                                <div class="ar-details__content text-justify" itemprop="abstract">
+                                                    Tesis de Maestría
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 6: LIBROS (https://schema.org/Book)
+                                    - itemtype: Se define dinámicamente según el tipo de catálogo (libros -> Book).
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope itemtype="https://schema.org/Book">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">libros</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/150690" itemprop="url"><span itemprop="name">¡Con la Razón y la Fuerza, Venceremos!: La Rebelión Popular y la Subjetividad Comunista en los ‘80</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- Año de publicación: Cuando viene vacío de la base no se agrega itemprop="datePublished" -->
+                                                        <td data-label="Año de publicación"></td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="https://directory.doabooks.org/handle/20.500.12854/87233"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">Directory of Open access
+                                                                    Books</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema; el guion "-" queda fuera de la etiqueta -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Humanidades y artes</span></a> -
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6.1"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Historia y arqueología</span></a>&nbsp;
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 7: TESIS (https://schema.org/Thesis)
+                                    - Incluye lista de autores separados por ";" (Person) y resumen desplegable (abstract).
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope
+                                        itemtype="https://schema.org/Thesis">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">tesis</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/107180" itemprop="url"><span itemprop="name">¡Farafarachín!... o el arte de los cabezazos: descascarando el tiempo, el espacio y otros estratos simbólicos traslapados de las mascaradas y cimarronas costarricenses</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <p class="m-b-1 font-sans-serif small"><span
+                                                    class="fw-bold">Autores/as:</span> <span class="text-muted">
+                                                    <!-- author (Person): Al recorrer el array/cadena de autores, cada nombre se envuelve en su propio nodo Person y el separador ";" queda fuera -->
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span
+                                                            itemprop="name">Liliana Alicia Chacón Solís</span></span>
+                                                    ;
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span
+                                                            itemprop="name">Daniel Belinche</span></span>
+                                                </span></p>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- datePublished: Se incluye cuando la fila tiene año de publicación cargado en la base -->
+                                                        <td data-label="Año de publicación" itemprop="datePublished">
+                                                            2015</td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="http://sedici.unlp.edu.ar/handle/10915/48415"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">SEDICI: Repositorio Institucional de
+                                                                    la UNLP (SNRD)</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6.4"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Artes</span></a>&nbsp;
+
+                                            </p>
+                                            <details class="m-t-1" id="abstract-107180">
+                                                <summary>Resumen disponible</summary>
+                                                <div class="ar-details__content text-justify" itemprop="abstract">
+                                                    Mediante el método etnográfico, la investigación explora las
+                                                    características de las mascaradas y cimarronas costarricenses,
+                                                    entendiéndolas como forma artística. En el primer capítulo de la
+                                                    tesis, ayudada por el pensamiento de algunos autores
+                                                    latinoamericanos, la autora defiende el carácter artístico
+                                                    popular, performático público y participativo de esta práctica.
+                                                    En la segunda sección se presenta el análisis de las
+                                                    observaciones de campo, las cuales se realizaron durante las
+                                                    festividades de bienvenida del nuevo sacerdote del pueblo de San
+                                                    Antonio de Escazú, en enero del 2015. En el tercer capítulo se
+                                                    estudian dos dimensiones del arte, el tiempo y el espacio, y
+                                                    cómo estas son metaforizadas en el arte de los cabezazos. En la
+                                                    última sección de la tesis, la autora investiga la conexión
+                                                    entre el concepto de identidad nacional y dicha tradición
+                                                    artística, lúdica y musical, echando mano de ciertos estudios
+                                                    provenientes del paradigma de la cognición corporeizada, los
+                                                    cuales aportan explicaciones sobre el hecho de que una comunidad
+                                                    utilice la música, el juego y la danza para contenerse a sí
+                                                    misma, practicar su capacidad de socialización y asegurar la
+                                                    identificación de sus individuos con el grupo, lo cual
+                                                    constituye una importantísima función para mejorar la
+                                                    convivencia y el sentido de unidad entre los seres humanos.
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 8: TESIS (https://schema.org/Thesis)
+                                    - Incluye múltiples autores separados por ";" (Person) y resumen desplegable (abstract).
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope
+                                        itemtype="https://schema.org/Thesis">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">tesis</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/116253" itemprop="url"><span itemprop="name">¡Minas de plata y oro de la Confederación en el marco de un país dividido! La construcción político discursiva de la economía de la Confederación del Diario El Nacional Argentino de Paraná durante el año 1854</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <p class="m-b-1 font-sans-serif small"><span
+                                                    class="fw-bold">Autores/as:</span> <span class="text-muted">
+                                                    <!-- author (Person): Al recorrer el array/cadena de autores, cada nombre se envuelve en su propio nodo Person y el separador ";" queda fuera -->
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span itemprop="name">María
+                                                            Julieta Schenfeld</span></span>
+                                                    ;
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span itemprop="name">Luis
+                                                            Sujatovich</span></span>
+                                                    ;
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span
+                                                            itemprop="name">Silvia Ratto</span></span>
+                                                    ;
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span itemprop="name">Julio
+                                                            Moyano</span></span>
+                                                    ;
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span
+                                                            itemprop="name">Carolina Biernat</span></span>
+                                                </span></p>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- datePublished: Se incluye cuando la fila tiene año de publicación cargado en la base -->
+                                                        <td data-label="Año de publicación" itemprop="datePublished">
+                                                            2021</td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="http://ridaa.unq.edu.ar/handle/20.500.11807/2945"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">Repositorio Institucional Digital de
+                                                                    Acceso Abierto de la Universidad Nacional de Quilmes
+                                                                    (SNRD)</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=5.2"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Economía y negocios</span></a>&nbsp;
+
+                                            </p>
+                                            <details class="m-t-1" id="abstract-116253">
+                                                <summary>Resumen disponible</summary>
+                                                <div class="ar-details__content text-justify" itemprop="abstract">
+                                                    Schenfeld, M. J. (2021). ¡Minas de plata y oro de la
+                                                    Confederación en el marco de un país dividido! La construcción
+                                                    político discursiva de la economía de la Confederación del
+                                                    Diario El Nacional Argentino de Paraná durante el año 1854.
+                                                    (Tesis de maestría). Universidad Nacional de Quilmes, Bernal,
+                                                    Argentina.
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 9: TESIS (https://schema.org/Thesis)
+                                    - Incluye múltiples filas de disponibilidad (múltiples repositorios Organization) y resumen desplegable.
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope
+                                        itemtype="https://schema.org/Thesis">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">tesis</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/116254" itemprop="url"><span itemprop="name">¡Para que todas podamos decidir!: El debate sobre el derecho al aborto entre mujeres jóvenes de escuelas secundarias en la ciudad de La Plata</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <p class="m-b-1 font-sans-serif small"><span
+                                                    class="fw-bold">Autores/as:</span> <span class="text-muted">
+                                                    <!-- author (Person): Al recorrer el array/cadena de autores, cada nombre se envuelve en su propio nodo Person y el separador ";" queda fuera -->
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span itemprop="name">María
+                                                            Laura Granillo</span></span>
+                                                    ;
+                                                    <span itemprop="author" itemscope
+                                                        itemtype="https://schema.org/Person"><span
+                                                            itemprop="name">Adriana Virginia Bonatto</span></span>
+                                                </span></p>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- datePublished: Se incluye cuando la fila tiene año de publicación cargado en la base -->
+                                                        <td data-label="Año de publicación" itemprop="datePublished">
+                                                            2021</td>
+                                                        <!-- provider (Organization): En cada fila de disponibilidad se genera una entidad Organization con la URL y nombre del repositorio -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="http://sedici.unlp.edu.ar/handle/10915/118384"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">SEDICI: Repositorio Institucional de
+                                                                    la UNLP (SNRD)</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <td data-label="Año de publicación" itemprop="datePublished">
+                                                            2021</td>
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="http://www.memoria.fahce.unlp.edu.ar/tesis/te.1981/te.1981.pdf"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">Memoria Académica (SNRD)</span></a>
+                                                        </td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Humanidades y artes</span></a>&nbsp;
+
+                                            </p>
+                                            <details class="m-t-1" id="abstract-116254">
+                                                <summary>Resumen disponible</summary>
+                                                <div class="ar-details__content text-justify" itemprop="abstract">
+                                                    En el presente trabajo me he propuesto analizar la repercusión
+                                                    de la demanda por el aborto legal en mujeres adolescentes de
+                                                    sectores populares que asisten a cuatro escuelas secundarias de
+                                                    la ciudad de La Plata. Incorporando aportes de los estudios
+                                                    sobre el aborto, las juventudes y la Educación Sexual Integral
+                                                    en Argentina, reflexiono sobre la importancia de contemplar las
+                                                    diferencias de clase social a la hora de analizar las
+                                                    perspectivas sobre el aborto y la maternidad. A través del
+                                                    recurso de la entrevista semi-estructurada, analizó las
+                                                    observaciones de las alumnas en torno a la legalización del
+                                                    aborto. El trabajo debate con los argumentos que esbozan que las
+                                                    resistencias de estos sectores a sumarse a esta pelea se dan a
+                                                    partir de lo que, por ejemplo, plantea Climent (citado en
+                                                    Caneva, 2012) acerca de que la maternidad/paternidad resulta un
+                                                    proyecto de vida para los y las adolescentes (de los sectores
+                                                    populares). A lo largo de esa tesis, y en contra de esos
+                                                    argumentos, intento demostrar que los embarazos adolescentes se
+                                                    producen a causa de la pobreza, que la mayoría de las veces es
+                                                    el único destino para esas jóvenes. En estas circunstancias,
+                                                    sumarse a la lucha por el aborto legal abre la posibilidad de
+                                                    desarrollar un proyecto de vida libre, incluso si este coincide
+                                                    con la maternidad. Asimismo, disiento con aquellos trabajos que
+                                                    observan el embarazo adolescente como una problemática desde una
+                                                    mirada distante de la realidad que viven muchas veces esas
+                                                    jóvenes. El objetivo es ofrecer herramientas que puedan
+                                                    contribuir a los debates juveniles a fin de que alcancen un
+                                                    mayor grado de autonomía y de espíritu crítico en las cuestiones
+                                                    relacionadas con sus cuerpos y sus trayectorias de vida. Para
+                                                    esto, pongo en debate las distintas estrategias discursivas,
+                                                    tomando aportes de Laura Klein, que se utilizan por parte del
+                                                    movimiento feminista para defender e impulsar que se apruebe el
+                                                    proyecto de interrupción voluntaria del embarazo. Finalmente,
+                                                    considero la escuela un lugar clave para llevar adelantes estas
+                                                    estrategias, como un espacio de organización y concientización y
+                                                    es fundamental seguir peleando por ese espacio.
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================
+                                    BLOQUE 10: LIBROS (https://schema.org/Book)
+                                    - itemtype: Se define dinámicamente según el tipo de catálogo (libros -> Book).
+                                    ========================================================================= -->
+                                    <div class="panel panel-default m-b-2" itemscope itemtype="https://schema.org/Book">
+                                        <div class="panel-body">
+
+                                            <div class="row m-b-1">
+                                                <div class="col-xs-12 col-sm-6 m-b-05">
+                                                    <!-- genre y conditionsOfAccess: Toman directamente el texto de las etiquetas de tipo y acceso -->
+                                                    <span class="label label-primary" itemprop="genre">libros</span>
+                                                    <span class="label label-warning"
+                                                        itemprop="conditionsOfAccess">Acceso Abierto</span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 text-sm-right">
+                                                    <a href="#" class="btn btn-default btn-sm"><i class="fa fa-plus"
+                                                            aria-hidden="true"></i> Agregar a Mi catálogo</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- name y url: El título es el enlace directo a la ficha del catálogo; <span itemprop="name"> conserva el título limpio y el texto sr-only aclara el destino -->
+                                            <h3 class="m-t-0 m-b-1"><a href="https://biblioteca.sicyt.gob.ar/catalogo/191498" itemprop="url"><span itemprop="name">¡Que viva la música!: Repaso de conversación en español</span><span class="sr-only"> — Ver más información</span></a></h3>
+
+                                            <h4 class="h4 font-sans-serif m-t-1 m-b-05"><span
+                                                    class="small fw-bold">Disponibilidad: </span></h4>
+
+                                            <table class="table table-responsive-poncho small">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Institución detectada</th>
+                                                        <th>Año de publicación</th>
+                                                        <th>Navegá</th>
+                                                        <th>Descargá</th>
+                                                        <th>Solicitá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Institución detectada: Sin itemprop porque "No requiere" es validación de acceso/IP, no el proveedor -->
+                                                        <td data-label="Institución detectada">No requiere</td>
+                                                        <!-- Año de publicación: Cuando viene vacío de la base no se agrega itemprop="datePublished" -->
+                                                        <td data-label="Año de publicación"></td>
+                                                        <!-- provider (Organization): En la columna Navegá se anida la entidad Organization combinando el href (itemprop="url") y el nombre del repositorio (itemprop="name") -->
+                                                        <td data-label="Navegá" itemprop="provider" itemscope
+                                                            itemtype="https://schema.org/Organization"><a
+                                                                href="https://directory.doabooks.org/handle/20.500.12854/70932.5"
+                                                                target="_blank" itemprop="url"><span
+                                                                    itemprop="name">Directory of Open access
+                                                                    Books</span></a></td>
+                                                        <td data-label="Descargá"><i aria-hidden="true"
+                                                                class="fa fa-unlock-alt fa-2x fa-fw text-warning"
+                                                                title="Descargá directamente"></i><span
+                                                                class="sr-only">Descargá directamente</span></td>
+                                                        <td data-label="Solicitá"><i aria-hidden="true"
+                                                                class="fa fa-times fa-2x fa-fw text-danger"
+                                                                title="No disponible para solicitar"></i><span class="sr-only">No disponible para solicitar</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <p class="m-t-05 m-b-05 small"><span class="fw-bold">Cobertura
+                                                    temática:</span>
+                                                <!-- about (Thing): En cada iteración de disciplina, el <a> aporta la URL del filtro y el <span itemprop="name"> conserva el nombre del tema; el guion "-" queda fuera de la etiqueta -->
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Humanidades y artes</span></a> -
+                                                <a href="https://biblioteca.sicyt.gob.ar/catalogo?discipline_id%5B%5D=6.4"
+                                                    itemprop="about" itemscope itemtype="https://schema.org/Thing"><span
+                                                        itemprop="name">Artes</span></a>&nbsp;
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div>
+                                    <nav aria-label="Paginación">
+                                        <ul class="pagination">
+
+                                            <li class="disabled" aria-disabled="true" aria-label="« Anterior">
+                                                <span aria-hidden="true">‹</span>
+                                            </li>
+
+                                            <li class="active" aria-current="page"><span>1</span></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=2">2</a></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=3">3</a></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=4">4</a></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=5">5</a></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=6">6</a></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=7">7</a></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=8">8</a></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=9">9</a></li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=10">10</a></li>
+
+                                            <li class="disabled" aria-disabled="true"><span>...</span></li>
+
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=16681">16681</a>
+                                            </li>
+                                            <li><a href="http://biblioteca.sicyt.gob.ar/catalogo?page=16682">16682</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="http://biblioteca.sicyt.gob.ar/catalogo?page=2" rel="next"
+                                                    aria-label="Siguiente »">›</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="region region-footer1">
+                        <section id="block-menu-menu-footer-1" class="block block-menu clearfix">
+                            <h2 class="block-title h3 section-title">Trámites</h2>
+                            <ul class="menu nav">
+                                <li class="first leaf"><a href="https://www.argentina.gob.ar/turnos">Turnos</a></li>
+                                <li class="leaf"><a href="https://www.argentina.gob.ar/tad">Trámites a distancia</a>
+                                </li>
+                                <li class="last leaf"><a
+                                        href="https://www.argentina.gob.ar/miargentina/mesadeayuda">Atención a la
+                                        ciudadanía</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="region region-footer2">
+                        <section id="block-menu-menu-footer-2" class="block block-menu clearfix">
+                            <h2 class="block-title h3 section-title">Acerca de la República Argentina</h2>
+                            <ul class="menu nav">
+                                <li class="first leaf"><a href="https://www.argentina.gob.ar/pais">Nuestro país</a></li>
+                                <li class="leaf"><a href="https://www.argentina.gob.ar/normativa">Leyes argentinas</a>
+                                </li>
+                                <li class="leaf"><a href="https://www.argentina.gob.ar/organismos">Organismos</a></li>
+                                <li class="last leaf"><a
+                                        href="https://www.argentina.gob.ar/desregulacion/mapa-del-estado">Mapa del
+                                        Estado</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="region region-footer3">
+                        <section id="block-menu-menu-footer-3" class="block block-menu clearfix">
+                            <h2 class="block-title h3 section-title">Acerca de Argentina.gob.ar</h2>
+                            <ul class="menu nav">
+                                <li class="first leaf"><a href="https://www.argentina.gob.ar/acerca">Acerca de este
+                                        sitio</a></li>
+                                <li class="leaf"><a href="https://www.argentina.gob.ar/terminos-y-condiciones">Términos
+                                        y condiciones</a></li>
+                                <li class="last leaf"><a href="https://www.argentina.gob.ar/sugerencias">Sugerencias</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid border-top-amarillo">
+            <div class="row sub-footer">
+                <div class="container">
+                    <div class="col-sm-6 m-y-1 p-x-0"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
